@@ -45,3 +45,25 @@ function countVowels(str){
 
 }
 
+// ============ PART 3: OBJECT ============
+
+const student = {
+    name: "William Zhong",
+    age: 20,
+    grades: [85,92,78,90,88],
+
+    getAverage: function(){
+        let avg = average(this.grades);
+        return avg;
+    },
+    isHonorRoll: function(){
+        let avg = this.getAverage();
+
+        if(avg > 85){
+            return true;
+        }else{
+         return false;
+        }
+    },
+};
+
